@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "./node_modules/.bin/tsc",
+    "build": "./node_modules/typescript/bin/tsc",
     "dev": "./node_modules/nodemon/bin/nodemon.js",
     "serve": "node dist/index.js"
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      ".(ts|tsx)": "./node_modules/.bin/ts-jest"
     },
     "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "moduleFileExtensions": [
